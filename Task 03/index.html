@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 03</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#carousel">Gallery</a></li>
+                <li><a href="#api">Jokes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>HomePage content will be shown here</h1>
+            </div>
+        </section>
+
+        <section class="carousel-section" id="carousel">
+            <h2>Image Gallery</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img src="https://image-processor-storage.s3.us-west-2.amazonaws.com/images/3cf61c1011912a2173ea4dfa260f1108/halo-of-neon-ring-illuminated-in-the-stunning-landscape-of-yosemite.jpg" alt="Nature" class="carousel-item active">
+                    <img src="https://t4.ftcdn.net/jpg/02/31/69/05/360_F_231690594_1xpuGVGkzsPIvIVRyRkGLY5Ze11d3yev.jpg" alt="Architecture" class="carousel-item">
+                    <img src="https://t4.ftcdn.net/jpg/03/08/69/75/360_F_308697506_9dsBYHXm9FwuW0qcEqimAEXUvzTwfzwe.jpg" alt="Technology" class="carousel-item">
+                    <img src="https://cdn.powerofpositivity.com/wp-content/uploads/2018/06/less-motivated.jpeg" alt="Random" class="carousel-item">
+                    <img src="https://thumbs.dreamstime.com/b/sunrise-morning-lifestyle-traveler-woman-raises-her-hand-feeling-good-relaxed-happy-nature-tea-cosmos-farm-345408001.jpg" alt="Random" class="carousel-item">
+                    <img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" alt="Random" class="carousel-item">
+                </div>
+                <button class="carousel-button prev">❮</button>
+                <button class="carousel-button next">❯</button>
+                <div class="carousel-dots"></div>
+            </div>
+        </section>
+
+        <section class="api-section" id="api">
+            <h2>Daily Jokes</h2>
+            <div class="api-container">
+                <button id="fetchJoke" class="joke-button">Get Random Joke</button>
+                <div class="joke-display"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>This is foote section</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
