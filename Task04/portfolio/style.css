@@ -1,0 +1,194 @@
+body{
+    background-color: #888;
+}
+nav {
+    background: #333;
+    padding: 0.5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+ul li a{
+    text-decoration: none;
+    font-size: x-large;
+    color: wheat;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+section {
+    padding: 4rem 2rem;
+    min-height: 100vh;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.project-card {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.input_div {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: larger;
+    padding: 5px;
+    padding-top: 0px;
+    font-size: 23px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    background-size: cover;
+    /* height: 85vh; */
+    background-color: rgba(0, 255, 255, 0.072);
+
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgba(0, 0, 0, 0.409); */
+    /* padding: 5px; */
+    margin: 5px;
+
+}
+
+input,
+#message {
+    margin-bottom: 2rem;
+    padding: 7.5px;
+    border-radius: 5px;
+    border: 2px solid blue;
+
+}
+
+.heading3 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.submit {
+    display: flex;
+    justify-self: center;
+    /* background:local; */
+    margin-top: 10px;
+    border-radius: 3px;
+    padding: 5px 15px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(3, 166, 241, 0.972);
+    font-size: 20px;
+    color: rgb(29, 28, 28);
+}
+
+#message {
+    width: 40%;
+}
+
+@media (max-width:790px) {
+    label {
+        display: none;
+    }
+
+    .input_div {
+        width: 80%;
+        margin-left: 6%;
+        margin-right: 8%;
+        border: 3px solid rgb(0, 132, 255);
+        border-radius: 7px;
+    }
+
+    .heading3 {
+        color: white;
+        font-size: 50px;
+    }
+
+    input,
+    #message {
+        width: 98%;
+        margin: 25px 10px;
+        height: 30px;
+        border-radius: 7px;
+        font-size: 25px;
+        background-color: black;
+        padding: 10px;
+        color: yellow;
+        border: 2px solid rgb(255, 0, 170);
+    }
+
+    .submit {
+        width: 95%;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(11, 161, 236);
+        border: 2px solid rgb(251, 30, 30);
+        font-family: 'Arial Narrow Bold', sans-serif;
+        margin-bottom: 15px;
+    }
+
+    .input_div {
+        margin-bottom: 20px;
+    }
+
+    #message {
+        height: 40%;
+    }
+
+    .anchor {
+        /* position: relative; */
+        /* width: 98%; */
+        /* margin: 25px 10px; */
+        /* height: 30px; */
+        border-radius: 7px;
+        font-size: 25px;
+        background-color: black;
+        padding: 20px;
+        color: yellow;
+        border: 2px solid rgb(255, 0, 170);
+        text-decoration: none;
+        margin-top: 12px;
+        width: 80%;
+        margin-left: 2%;
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+}
+
+.anchor {
+    border-radius: 7px;
+    font-size: 25px;
+    background-color: black;
+    padding: 15px;
+    color: yellow;
+    border: 2px solid rgb(255, 0, 170);
+    margin-top: 12px;
+    width: 38%;
+    margin-left: 30%;
+    margin-bottom: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
